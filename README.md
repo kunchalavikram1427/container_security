@@ -1,7 +1,7 @@
 
 # Container Images Scanning using Anchore Engine
   
-> Scanning multistage and distroless images
+> Scanning alpine and distroless images
 
 ### Start Minikube cluster
 ```sh
@@ -27,6 +27,12 @@ https://github.com/GoogleContainerTools/distroless/blob/main/examples/java/Docke
 https://github.com/docker/compose/releases
 ```
 
+### Installing Anchore CLI
+```sh
+apt-get install python3-pip –y
+pip install anchorecli
+anchore-cli --help
+```
 ### Installing Anchore engine
 ```sh
 curl https://engine.anchore.io/docs/quickstart/docker-compose.yaml > docker-compose.yaml
