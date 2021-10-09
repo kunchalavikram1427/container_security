@@ -7,7 +7,7 @@ docker login -u $USER -p $PASS
 ```
 
 
-### docker single build
+### Docker single build
 
 ```sh
 cd singlestage
@@ -16,7 +16,7 @@ docker build -t kunchalavikram/maven-single .
 docker run -d -p 80:8080 --name web kunchalavikram/maven-single
 http://<minikube ip>:80/
 ```
-### docker alpine build
+### Docker alpine build
 
 ```sh
 cd alpine
@@ -25,7 +25,7 @@ docker build -t kunchalavikram/maven-alpine.
 docker run -d -p 80:8080 --name web kunchalavikram/maven-single
 http://<minikube ip>:80/
 ```
-### docker multisage build
+### Docker multistage build
 
 ```sh
 cd multistage
@@ -35,7 +35,7 @@ docker run -d -p 80:8080 --name web kunchalavikram/maven-ms
 http://<minikube ip>:80/
 ```
 
-### docker distroless build
+### Docker distroless build
 ```sh
 https://github.com/GoogleContainerTools/distroless
 https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin#quickstart
@@ -45,7 +45,7 @@ https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin#quickst
 cd distroless
 ```
 
-Change the pom.xm file
+Change the pom.xml file
 ```sh
 plugin>
 	<groupId>com.google.cloud.tools</groupId>
@@ -63,7 +63,7 @@ Build the Maven application
 mvn compile jib:build
 ```
 
-### docker Image Size
+### Docker image sizes for various builds
 
 ```sh
 kunchalavikram/maven-ms latest 761e49ddac30 2 hours ago 102MB

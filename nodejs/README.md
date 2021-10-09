@@ -5,7 +5,7 @@
 ```sh
 docker login -u $USER -p $PASS
 ```
-### docker build and push
+### Docker build and push
 ```sh
 cd node/
 
@@ -27,7 +27,7 @@ docker run -d -p 80:8080 --name web kunchalavikram/node-ms
 http://<minikube ip>:80/
 ```
 
-### docker Image Size
+### Docker image sizes for various builds
 
 ```sh
 kunchalavikram/node-distroless latest 3d3d2856f2ad 8 minutes ago 125MB
