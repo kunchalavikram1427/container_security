@@ -46,7 +46,7 @@ docker-compose exec api anchore-cli system status
 minikube ip
 192.168.99.133
 
-curl http://<minikube ip>:8228/v1
+curl http://192.168.99.133:8228/v1
 "v1"
 
 anchore-cli --u admin --p foobar --url http://192.168.99.133:8228/v1 system status
