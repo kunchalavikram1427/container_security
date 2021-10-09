@@ -1,0 +1,11 @@
+# Use general node image as builder and install dependencies
+FROM node:8 as build
+WORKDIR /app
+COPY package.json server.js ./
+RUN npm install
+
+# Copy application with its dependencies into distroless image
+FROM gcr.io/distroless/nodejs
+COPY --from=build /app /
+EXPOSE 8080
+CMD ["server.js"]

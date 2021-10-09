@@ -1,0 +1,13 @@
+{
+  "name": "sample_web_app",
+  "version": "1.0.0",
+  "description": "Node.js on Docker",
+  "author": "vikram <devopsmadeeasy@outlook.com>",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
