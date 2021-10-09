@@ -30,10 +30,10 @@ http://<minikube ip>:80/
 ### Docker image sizes for various builds
 
 ```sh
-kunchalavikram/node-distroless latest 3d3d2856f2ad 8 minutes ago 125MB
-kunchalavikram/node-ms latest 9b16cc310012 13 minutes ago 903MB
-kunchalavikram/node-alpine latest df0505fecc93 13 minutes ago 75.2MB
-kunchalavikram/node-single latest fdfd85d9be89 13 minutes ago 904MB
+kunchalavikram/node-distroless 125MB
+kunchalavikram/node-ms 903MB
+kunchalavikram/node-alpine 75.2MB
+kunchalavikram/node-single 904MB
 ```
 ###  Authors
 -  Vikram K (www.youtube.com/c/devopsmadeeasy)
