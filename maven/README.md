@@ -2,7 +2,7 @@
 # Building Maven Images
   
 ### docker login first
-docker login -u USER -p PASS
+docker login -u $USER -p $PASS
 
 ### docker single build
 
@@ -33,9 +33,10 @@ http://<minikube ip>:80/
 ```
 
 ### docker distroless build
-
- https://github.com/GoogleContainerTools/distroless
- https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin#quickstart
+```sh
+https://github.com/GoogleContainerTools/distroless
+https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin#quickstart
+```
 
 ```sh
 cd distroless
@@ -54,7 +55,7 @@ plugin>
 	</configuration>
 </plugin>
 ```
-
+Build the Maven application
 ```shell
 mvn compile jib:build
 ```

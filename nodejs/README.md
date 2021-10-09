@@ -2,7 +2,7 @@
 # Building Node Images
   
 ### docker login first
-docker login -u USER -p PASS
+docker login -u $USER -p $PASS
 
 ### docker build and push
 ```sh

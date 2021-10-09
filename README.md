@@ -8,10 +8,22 @@
 minikube start --driver=virtualbox (or)
 minikube start --cpus=4 --memory=4096 --driver=virtualbox
 ```
-### Anchore Engine Links
+### Anchore Engine links
 ```sh
+https://github.com/anchore/
 https://github.com/anchore/anchore-engine
 https://github.com/anchore/anchore-cli
+```
+
+### Distroless Images
+```sh
+https://github.com/GoogleContainerTools/distroless
+https://github.com/GoogleContainerTools/jib
+https://github.com/GoogleContainerTools/distroless/blob/main/examples/java/Dockerfile
+```
+
+### Docker compose download link
+```sh
 https://github.com/docker/compose/releases
 ```
 
@@ -26,13 +38,15 @@ docker-compose exec api anchore-cli system status
 ### Using Anchore CLI
 ```sh
 minikube ip
+192.168.99.133
+
 curl http://<minikube ip>:8228/v1
-v1
+"v1"
 
-anchore-cli --u admin --p foobar --url http://192.168.99.132:8228/v1 system status
-Unauthorized
+anchore-cli --u admin --p foobar --url http://192.168.99.133:8228/v1 system status
+"Unauthorized"
 
-export ANCHORE_CLI_URL=http://192.168.99.132:8228/v1
+export ANCHORE_CLI_URL=http://192.168.99.133:8228/v1
 export ANCHORE_CLI_USER=admin
 export ANCHORE_CLI_PASS=foobar
 
