@@ -1,8 +1,11 @@
 
 # Building Maven Images
   
-### docker login first
+### Login to docker
+```sh
 docker login -u $USER -p $PASS
+```
+
 
 ### docker single build
 
