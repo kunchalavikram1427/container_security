@@ -60,12 +60,14 @@ Build the Maven application
 mvn compile jib:build
 ```
 
-### Image Sizes
+### docker Image Size
 
- - kunchalavikram/maven-ms latest 761e49ddac30 2 hours ago 102MB
- - kunchalavikram/maven-alpine latest db31679f84b2 2 hours ago 190MB
- - kunchalavikram/maven-single latest 760a793cea8f 2 hours ago 594MB
- - kunchalavikram/maven-distroless latest 34fcd33b806b 1 years ago 242MB
+```sh
+kunchalavikram/maven-ms latest 761e49ddac30 2 hours ago 102MB
+kunchalavikram/maven-alpine latest db31679f84b2 2 hours ago 190MB
+kunchalavikram/maven-single latest 760a793cea8f 2 hours ago 594MB
+kunchalavikram/maven-distroless latest 34fcd33b806b 1 years ago 242MB
+```
 
 ###  Authors
 -  Vikram K (www.youtube.com/c/devopsmadeeasy)

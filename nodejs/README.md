@@ -18,6 +18,14 @@ docker push kunchalavikram/node-alpine
 docker push kunchalavikram/node-ms
 docker push kunchalavikram/node-distroless
 ```
+
+### Running nodejs app
+
+```sh
+docker run -d -p 80:8080 --name web kunchalavikram/node-ms
+http://<minikube ip>:80/
+```
+
 ### docker Image Size
 
 ```sh
