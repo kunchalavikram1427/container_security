@@ -30,7 +30,7 @@ http://<minikube ip>:80/
 ```sh
 cd multistage
 
-docker build -t kunchalavikram/maven-single .
+docker build -t kunchalavikram/maven-ms .
 docker run -d -p 80:8080 --name web kunchalavikram/maven-ms
 http://<minikube ip>:80/
 ```
